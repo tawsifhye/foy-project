@@ -10,7 +10,6 @@
 
 body {
     font-family: "poppins";
-    background-color: red;
 }
 
 .classroom-hero-section {
@@ -18,18 +17,23 @@ body {
     padding: 30px 0;
     position: relative;
 
+    z-index: 3;
+
 }
 
 .classroom-hero-section .model {
     z-index: 3;
+
 }
 
 .classroom-hero-section .model img {
-    width: 80%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
 }
 
 .classroom-hero-section h1.tag-line {
-    font-family: 'Ubuntu';
     font-weight: 700;
     font-size: 60px;
     color: var(--primary-font-color);
@@ -39,7 +43,7 @@ body {
     color: var(--secondary-color);
 }
 
-.classroom-hero-section button {
+.classroom-hero-section a#get-started {
     font-family: 'poppins';
     font-weight: 500;
     font-size: 18px;
@@ -49,6 +53,14 @@ body {
     border-radius: 8px;
     padding: 17px 38px;
     margin-top: 45px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.classroom-hero-section .row {
+    justify-content: center;
+    align-items: center;
 }
 
 .classroom-hero-section .rectangle-white {
@@ -59,16 +71,19 @@ body {
 }
 
 .classroom-hero-section .rectangle-white img {
-    width: 580px;
+    width: 42%;
     position: absolute;
-    top: -100px;
-    right: 0;
+    top: -217px;
+    right: 0px;
     z-index: 1;
 }
 
 .classroom-features-section {
     background-color: var(--primary-background-color);
-    padding: 40px 0;
+    padding-top: 40px;
+    position: relative;
+    overflow: hidden;
+
 }
 
 .classroom-features-section h2.tagline {
@@ -76,6 +91,7 @@ body {
     text-align: center;
     font-weight: 600;
     font-size: 36px;
+    margin-top: 80px;
 }
 
 .classroom-features-section p.sub-tagline {
@@ -86,9 +102,16 @@ body {
 
 .classroom-features-section .card {
     border-radius: 15px;
-    padding: 30px 0;
+    padding: 30px 10px;
     border: none;
     margin-top: 20px;
+    transition: .3s;
+
+}
+
+.classroom-features-section .card:hover {
+    box-shadow: 35px 40px 100px rgb(31 175 203 / 10%);
+    transform: scale(0.98);
 }
 
 .classroom-features-section .card img {
@@ -109,10 +132,248 @@ body {
 }
 
 .classroom-features-section .card p.card-text {
-    color: var(--primary-font-color);
+    color: #000;
     opacity: 0.6;
     font-weight: 400;
     font-size: 14px;
     text-align: center;
     margin-top: 10px;
+}
+
+.classroom-features-section .rectangle1 {
+    margin-top: -827px;
+    max-width: 800px;
+}
+
+.classroom-features-section .rectangle1 img {
+    width: 761px;
+    height: 587px;
+}
+
+
+.classroom-features-section .rectangle2 {
+    max-width: 800px;
+    height: 500px;
+}
+
+.classroom-features-section .rectangle2 img {
+    max-width: 680px;
+    margin-left: 160px;
+    margin-top: 142px;
+
+}
+
+.classroom-features-section .rectangle3 {
+    position: absolute;
+    position: absolute;
+    right: -94px;
+    bottom: -430px;
+}
+
+.faq-section {
+    /* background-color: #FFFFFF; */
+    background-image: url('/assets/images/Group33642.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+
+}
+
+.faq-section h2.tagline,
+.why-us-section h2.tagline {
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--primary-font-color);
+    margin-top: 100px;
+    line-height: 48px;
+
+}
+
+.faq-section h2.tagline span,
+.why-us-section h2.tagline span {
+    color: var(--secondary-color);
+}
+
+.faq-section .statistics-container {
+    background: #FFFFFF;
+    box-shadow: 0px 15px 40px rgba(183, 183, 183, 0.12);
+    border-radius: 8.75994px;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 0;
+    z-index: 5;
+    position: relative;
+    margin-top: -40px;
+}
+
+.faq-section .statistics-container .statistics-number {
+    color: var(--secondary-color);
+    font-weight: 800;
+    font-size: 42px;
+    margin: 0;
+}
+
+.faq-section .statistics-container .statistics-label {
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--primary-font-color);
+}
+
+.faq-section .accordion-item {
+    border-bottom: 1.46753px solid rgba(0, 0, 0, 0.11) !important;
+}
+
+.faq-section .accordion-item:last-of-type {
+    border-bottom: transparent !important;
+}
+
+.faq-section .accordion-item,
+.faq-section .accordion-button,
+.faq-section .accordion-body {
+    background: transparent !important;
+    border: transparent;
+}
+
+.faq-section .accordion-item {
+    padding: 0;
+}
+
+.faq-section .accordion-body {
+    color: #1A3447;
+    opacity: 0.6;
+    line-height: 27px;
+}
+
+.faq-section .accordion-item .accordion-header button {
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    border: none !important;
+}
+
+.faq-section .accordion-item .accordion-header .accordion-button::after {
+    font-family: "FontAwesome";
+    content: '\f105';
+    background-image: none;
+    color: var(--secondary-color);
+
+}
+
+.faq-section .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+    transform: rotate(90deg);
+}
+
+.why-us-section {
+    background-color: var(--primary-background-color);
+    padding: 30px 0;
+}
+
+.why-us-section ul li {
+    color: #012657;
+    font-size: 1.5rem;
+    line-height: 42px;
+    list-style-image: url(/assets/images/badge.png);
+}
+
+.why-us-section .why-us-image {
+    padding: 10px;
+}
+
+.why-us-section .why-us-image img {
+    max-width: 90%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+footer {
+    background-image: url('/assets/images/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    margin-top: -64px;
+}
+
+footer .footer-logo {}
+
+footer h4 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+footer .contact-us ul li,
+footer .quick-links ul li {
+    list-style: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+footer .quick-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 10px;
+}
+
+footer .contact-us ul li image {}
+
+.footer-header-line {
+    /* background-color: var(--secondary-color); */
+    opacity: 1;
+    width: 48px;
+    border: 2px solid var(--secondary-color);
+}
+
+
+footer .footer-form {
+    display: flex;
+}
+
+footer .footer-form input {
+    border: 1px solid rgba(0, 0, 124, 0.2);
+    border-radius: 6px 0px 0px 6px;
+    padding: 10px 5px;
+}
+
+footer .footer-form button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 15px;
+    height: 50px;
+    border: none;
+    margin-left: -1px;
+}
+
+footer .lower-footer {
+    border-top: 1.5px dashed #FFFFFF;
+    color: #fff;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+footer .lower-footer img.lower-logo {
+    width: 150px;
+}
+
+footer .lower-footer .social-icon a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer .lower-footer .container {
+    padding: 0;
+}
+
+footer .pattern {
+    position: absolute;
+    right: 0;
+}
+
+@media only screen and (max-width: 1600px) {
+    .classroom-features-section .rectangle3 {
+        bottom: -500px;
+    }
 }
