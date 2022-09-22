@@ -188,7 +188,7 @@ body {
     font-weight: 600;
     font-size: 36px;
     color: var(--primary-font-color);
-    margin-top: 100px;
+
     line-height: 48px;
 
 }
@@ -207,7 +207,7 @@ body {
     margin-top: 0;
     z-index: 5;
     position: relative;
-    margin-top: -40px;
+    margin-top: -65px;
 }
 
 .faq-section .statistics-container .statistics-number {
@@ -269,14 +269,26 @@ body {
 
 .why-us-section {
     background-color: var(--primary-background-color);
-    padding: 30px 0;
+    padding: 100px 0;
 }
 
 .why-us-section ul li {
+    font-family: 'poppins';
     color: #012657;
-    font-size: 1.5rem;
-    line-height: 42px;
-    list-style-image: url(/assets/images/badge.png);
+    font-size: 22px;
+    line-height: 36px;
+    list-style: none;
+    margin-top: 10px !important;
+    background: url(/assets/images/badge.png) no-repeat 7px 7px transparent;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 1px 1px 40px;
+    vertical-align: middle;
+}
+
+.why-us-section ul li span img {
+    margin-right: 10px;
+    height: 50px;
 }
 
 .why-us-section .why-us-image {
@@ -284,9 +296,8 @@ body {
 }
 
 .why-us-section .why-us-image img {
-    max-width: 90%;
+    max-width: 741px;
     display: inline-block;
-    margin: 0 auto;
 }
 
 footer {
@@ -294,8 +305,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 50px;
-    margin-top: -64px;
+    padding-top: 100px;
 }
 
 footer .footer-logo {}
@@ -318,7 +328,10 @@ footer .quick-links ul li a {
     line-height: 10px;
 }
 
-footer .contact-us ul li image {}
+footer ul {
+    padding-left: 0 !important;
+    margin-top: 40px;
+}
 
 .footer-header-line {
     /* background-color: var(--secondary-color); */
@@ -336,6 +349,7 @@ footer .footer-form input {
     border: 1px solid rgba(0, 0, 124, 0.2);
     border-radius: 6px 0px 0px 6px;
     padding: 10px 5px;
+    text-align: center;
 }
 
 footer .footer-form button {
@@ -345,6 +359,7 @@ footer .footer-form button {
     height: 50px;
     border: none;
     margin-left: -1px;
+    border-radius: 0px 6px 6px 0px;
 }
 
 footer .lower-footer {
