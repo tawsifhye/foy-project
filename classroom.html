@@ -16,6 +16,17 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- owl carousel link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -275,6 +286,79 @@
             </div>
         </div>
     </section>
+
+    <!-- testimonial_section starts -->
+    <div class="testimonial_section text-center">
+        <h2 class="tag-line">TESTIMONIALS</h2>
+
+        <p class="content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. </p>
+
+        <div class="testimonials container owl-carousel owl-theme">
+            <div class="card testimonial_card item">
+                <div class="card-body">
+                    <!-- <span class="quote">“</span> -->
+                    <p class="content">Amazing service! Claire helped me to reduce the
+                        shipping price a little and
+                        shipped it immediately after purchasing. The amethyst cave I got is a beauty.</p>
+                    <h2>Annette Black</h2>
+                </div>
+                <div class="card_image_container">
+                    <img class="" src="/assets/images/common_image.png" alt="Card image cap">
+                </div>
+            </div>
+            <div class="card testimonial_card item">
+                <div class="card-body">
+
+                    <p class="content">Amazing service! Claire helped me to reduce the
+                        shipping price a little and
+                        shipped it immediately after purchasing. The amethyst cave I got is a beauty.</p>
+                    <h2>Annette Black</h2>
+                </div>
+                <div class="card_image_container">
+                    <img class="" src="/assets/images/common_image.png" alt="Card image cap">
+                </div>
+            </div>
+            <div class="card testimonial_card item">
+                <div class="card-body">
+                    <p class="content">Amazing service! Claire helped me to reduce the
+                        shipping price a little and
+                        shipped it immediately after purchasing. The amethyst cave I got is a beauty.</p>
+
+                    <h2>Annette Black</h2>
+                </div>
+                <div class="card_image_container">
+                    <img class="" src="/assets/images/common_image.png" alt="Card image cap">
+                </div>
+            </div>
+            <div class="card testimonial_card item">
+                <div class="card-body">
+                    <p class="content">Amazing service! Claire helped me to reduce the
+                        shipping price a little and
+                        shipped it immediately after purchasing. The amethyst cave I got is a beauty.</p>
+
+                    <h2>Annette Black</h2>
+                </div>
+                <div class="card_image_container">
+                    <img class="" src="/assets/images/common_image.png" alt="Card image cap">
+                </div>
+            </div>
+            <div class="card testimonial_card item">
+                <div class="card-body">
+                    <p class="content">Amazing service! Claire helped me to reduce the
+                        shipping price a little and
+                        shipped it immediately after purchasing. The amethyst cave I got is a beauty.</p>
+
+                    <h2>Annette Black</h2>
+                </div>
+                <div class="card_image_container">
+                    <img class="" src="/assets/images/common_image.png" alt="Card image cap">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- testimonial_section ends -->
     <footer>
         <div class="container">
             <div class="row row-cols-1 row-cols-md-4 g-4 text-white">
@@ -347,6 +431,30 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        $('.testimonials').owlCarousel({
+            loop: false,
+            // marginRight: '20px',
+            responsiveClass: true,
+            nav: true,
+            navText: ['<div id="carousel_nav"><i class="fa-solid fa-angle-left common_carousel_previous"></i>',
+                '<i class="fa-solid fa-angle-right common_carousel_next"></i></div>'
+            ],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+
+                },
+                1000: {
+                    items: 3,
+                }
+            }
+        });
+    </script>
     <!-- Option 1: Public Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

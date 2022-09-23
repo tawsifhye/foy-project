@@ -181,7 +181,8 @@ body {
 }
 
 .faq-section h2.tagline,
-.why-us-section h2.tagline {
+.why-us-section h2.tagline,
+.testimonial_section h2.tag-line {
     text-align: center;
     font-family: 'Poppins';
     font-style: normal;
@@ -208,6 +209,7 @@ body {
     z-index: 5;
     position: relative;
     margin-top: -65px;
+    margin-bottom: 80px;
 }
 
 .faq-section .statistics-container .statistics-number {
@@ -300,6 +302,125 @@ body {
     display: inline-block;
 }
 
+/* testimonial_section starts */
+.testimonial_section {
+    margin-top: 6em;
+    margin-bottom: 2em;
+}
+
+.testimonial_section .content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.testimonials {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.testimonial_card {
+    background-color: var(--primary-background-color);
+    width: 20vw;
+    position: relative !important;
+    z-index: 1;
+    transition: .3s ease-in;
+}
+
+.testimonial_card .card_body {
+    padding: .5em !important;
+}
+
+.testimonial_card:nth-child(2) {
+    background-color: var(--primary-background) !important;
+}
+
+.testimonial_card .card_body {
+    box-shadow: 0px 4px 8px rgba(17, 74, 43, 0.08) !important;
+    border-radius: 8px;
+}
+
+.testimonial_card h2 {
+    font-size: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.testimonial_card .content {
+    width: 100%;
+}
+
+.quote {
+    color: var(--secondary-color);
+    font-size: 3rem;
+}
+
+.testimonial_card img {
+    display: inline-block !important;
+    margin-top: 3em !important;
+    width: 100px !important;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+
+}
+
+.testimonial_card:hover {
+    background-color: var(--secondary-color);
+}
+
+.card_image_container {
+    position: absolute;
+    bottom: -18%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.testimonials .owl-stage-outer {
+    height: 400px;
+}
+
+
+.testimonial_section .owl-nav {
+    position: absolute;
+    bottom: 11px;
+    right: 52px;
+}
+
+
+owl-nav button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.common_carousel_previous,
+.common_carousel_next {
+    color: var(--secondary-color);
+    border: 1px solid var(--primary-font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 1em;
+    transition: .3s ease-in;
+}
+
+.common_carousel_previous:hover,
+.common_carousel_next:hover {
+    color: #fff;
+    background-color: #012657;
+
+}
+
+/* testimonial_section ends */
+
 footer {
     background-image: url('/assets/images/footer-bg.png');
     background-repeat: no-repeat;
@@ -391,4 +512,23 @@ footer .pattern {
     .classroom-features-section .rectangle3 {
         bottom: -500px;
     }
+}
+
+
+
+@media only screen and (max-width: 766px) {
+    .testimonial_card {
+        width: 100%;
+    }
+
+    .testimonials .owl-stage-outer {
+        height: 308px;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .testimonials .owl-stage-outer {
+        height: 400px;
+    }
+
 }
