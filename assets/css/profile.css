@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+:root {
+    --body-background-color: #F5F5F5;
+    --primary-color: #29A3DA;
+    --primary-font-color: #1A3447;
+}
+
+body {
+    background-color: var(--body-background-color);
+    font-family: 'Poppins';
+}
+
+.profile-main-parent {
+    padding: 50px 0;
+}
+
+.profile-details {
+    background: #FFFFFF;
+    box-shadow: 5px 12px 50px rgba(181, 180, 180, 0.15);
+    border-radius: 20px;
+    padding: 30px 50px;
+}
+
+.profile-details img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 8px solid var(--primary-color);
+}
+
+.profile-details h2.profile-name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--primary-font-color);
+    margin-top: 20px;
+}
+
+.profile-details p.profile-holder-occupation {
+    font-weight: 300;
+    font-size: 20px;
+    color: #1A3447;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.profile-details .profile-statistics {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.profile-details .profile-statistics div {
+    border-right: 2px solid var(--primary-font-color);
+    padding: 0 40px;
+    height: 60px;
+}
+
+.profile-details .profile-statistics h2 {
+    color: var(--primary-font-color);
+    font-size: 32px;
+}
+
+.profile-details .profile-statistics p {
+    color: var(--primary-font-color);
+    font-size: 16px;
+}
+
+.profile-details .profile-statistics div:last-of-type {
+    border: none;
+}
+
+.profile-details .btn-upload {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.profile-details .btn-upload input[type=file] {
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.profile-details .btn-upload .btn {
+    padding: 8px 20px;
+    background: var(--primary-color);
+    width: 280px;
+    border-radius: 10px;
+    color: #fff;
+    border: 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.profile-details .btn-upload:hover .btn {
+    background: var(--primary-font-color);
+
+}
+
+.profile-details h2.profile-address {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+.profile-details p.profile-description {
+    font-size: 18px;
+    text-align: center;
+    color: var(--primary-font-color);
+    opacity: 0.6;
+}

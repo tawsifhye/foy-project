@@ -63,12 +63,7 @@ body {
     align-items: center;
 }
 
-.classroom-hero-section .rectangle-white {
-    /* position: absolute;
-    top: -136px;
-    right: -217px;
-    z-index: 1; */
-}
+
 
 .classroom-hero-section .rectangle-white img {
     width: 42%;
@@ -430,7 +425,7 @@ footer {
     padding-top: 100px;
 }
 
-footer .footer-logo {}
+
 
 footer h4 {
     font-weight: 700;
