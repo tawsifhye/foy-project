@@ -28,7 +28,7 @@
 <body>
 
     <section class="container profile-main-parent">
-        <div class="row row-cols-1 row-cols-md-2 justify-content-around align-items-center">
+        <div class="row row-cols-1 row-cols-md-2 justify-content-around ">
             <!-- profile-details starts -->
             <div class="col">
                 <div class="profile-details">
@@ -66,7 +66,41 @@
                 </div>
             </div>
             <!-- profile-details starts -->
-            <div class="col">col</div>
+            <!-- profile-form-section-starts -->
+            <div class="col align-items-start">
+                <div class="profile-form">
+                    <h2>Profile</h2>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4>BASIC INFO</h4>
+                        <div>
+                            <a href="" id="cancel-form">Cancel</a>
+                            <a href="" id="save-form">Save</a>
+                        </div>
+                    </div>
+
+                    <hr style="background-color: #00000073;">
+
+                    <div>
+                        <form action="/action_page.php">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- profile-form-section-ends -->
         </div>
     </section>
 
