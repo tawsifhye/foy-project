@@ -172,8 +172,6 @@ body {
 }
 
 
-.profile-form {}
-
 .profile-form form label {
     color: var(--primary-font-color);
     font-size: 14px;
