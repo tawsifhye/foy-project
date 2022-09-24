@@ -298,7 +298,7 @@ body {
 }
 
 .why-us-section .why-us-image img {
-    max-width: 741px;
+    max-width: 100%;
     display: inline-block;
 }
 
@@ -321,10 +321,11 @@ body {
 
 .testimonial_card {
     background-color: var(--primary-background-color);
-    width: 20vw;
+    width: 90%;
     position: relative !important;
     z-index: 1;
     transition: .3s ease-in;
+    margin: 0 auto;
 }
 
 .testimonial_card .card_body {
@@ -455,7 +456,7 @@ footer ul {
 }
 
 .footer-header-line {
-    /* background-color: var(--secondary-color); */
+    background-color: var(--secondary-color);
     opacity: 1;
     width: 48px;
     border: 2px solid var(--secondary-color);
@@ -494,13 +495,17 @@ footer .lower-footer img.lower-logo {
     width: 150px;
 }
 
+footer .lower-footer .social-icon {
+    margin: 0;
+}
+
 footer .lower-footer .social-icon a {
     text-decoration: none;
     margin-right: 10px;
 }
 
-footer .lower-footer .container {
-    padding: 0;
+footer .lower-footer .container .row {
+    margin: 0;
 }
 
 footer .pattern {
@@ -516,19 +521,70 @@ footer .pattern {
 
 
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 900px) {
     .testimonial_card {
-        width: 100%;
+        width: 90%;
     }
 
     .testimonials .owl-stage-outer {
-        height: 308px;
+        height: 500px;
     }
+}
+
+@media only screen and (max-width: 600px) {
+    .classroom-hero-section {
+        padding: 0 10px;
+    }
+
+    .classroom-hero-section h1.tag-line {
+        font-size: 42px;
+    }
+
+    .classroom-features-section {
+        padding: 0 20px;
+    }
+
+    .classroom-features-section h2.tagline,
+    .faq-section h2.tagline,
+    .why-us-section h2.tagline,
+    .testimonial_section h2.tag-line {
+        font-size: 28px;
+    }
+
+    .classroom-features-section p.sub-tagline {
+        font-size: 16px;
+    }
+
+    .faq-section .statistics-container {
+        margin-top: -80px;
+    }
+
+    .why-us-section {
+        padding: 80px 10px;
+    }
+
+    .why-us-section ul li {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .faq-section .accordion-item .accordion-header button {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .testimonial_section .testimonial_card {
+        margin: 0 auto;
+    }
+
+    footer .lower-footer .social-icon {
+        margin-top: 10px;
+    }
+
 }
 
 @media only screen and (max-width: 468px) {
     .testimonials .owl-stage-outer {
         height: 400px;
     }
-
 }
