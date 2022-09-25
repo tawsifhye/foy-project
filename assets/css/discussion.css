@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+
+:root {
+    --body-background-cover: #F5F5F5;
+    --primary-font-color: #1A3447;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: var(--body-background-cover);
+}
+
+p.sender-name {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--primary-font-color);
+    display: inline-block;
+}
+
+span.sending-time {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(26, 52, 71, 0.6)
+}
+
+img.sender-profile-image {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #FFFFFF;
+    filter: drop-shadow(4.21038px 4.21038px 12.38px rgba(158, 158, 158, 0.2));
+    border-radius: 50%;
+}
+
+p.sender-message {
+    margin-left: 80px;
+    background: #FFFFFF;
+    box-shadow: 5px 12px 30px rgba(181, 180, 180, 0.1);
+    border-radius: 0px 10px 10px 10px;
+    font-size: 16px;
+    padding: 20px 30px;
+    width: fit-content;
+}
+
+p.self-message {
+    background: #BDEEFF;
+    box-shadow: 5px 12px 30px rgba(189, 230, 241, 0.1);
+    border-radius: 10px 0px 10px 10px;
+    padding: 20px 30px;
+    width: auto;
+    display: inline-block;
+}
+
+.chat-type {
+    background: #FFFFFF;
+    border: 1px solid #29A3DA;
+    border-radius: 8px;
+    height: 70px;
+    padding: 10px;
+    width: 90%;
+}
+
+.chat-type input {
+    width: 98%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.chat-type input:focus {
+    outline: none;
+}
+
+.fa-arrow-up-from-bracket {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+}
+
+#send-button {
+    height: 50px;
+    border: none;
+    background: #29A3DA;
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .chat-type {
+        width: 80%;
+    }
+
+    .chat-type input {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .chat-type {
+        width: 70%;
+    }
+
+    .chat-type input {
+        width: 90%;
+    }
+}
