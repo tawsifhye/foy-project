@@ -529,12 +529,22 @@ footer .pattern {
 
 
 @media only screen and (max-width: 900px) {
+
+    .classroom-features-section .card h3.card-title {
+
+        font-size: 20px;
+    }
+
     .testimonial_card {
         width: 90%;
     }
 
     .testimonials .owl-stage-outer {
         height: 500px;
+    }
+
+    .footer .container {
+        width: 100%;
     }
 
     .footer-logo {
@@ -553,6 +563,10 @@ footer .pattern {
     footer .contact-us ul li,
     footer .quick-links ul li {
         font-size: 12px;
+    }
+
+    footer .footer-form input {
+        font-size: 10px;
     }
 }
 
@@ -581,6 +595,10 @@ footer .pattern {
     }
 
     .faq-section .statistics-container {
+        max-width: 90%;
+    }
+
+    .faq-section .statistics-container {
         margin-top: -80px;
     }
 
@@ -602,11 +620,19 @@ footer .pattern {
         margin: 0 auto;
     }
 
+    footer h4 {
+        font-size: 18px;
+    }
+
     footer .contact-us ul li,
     footer .quick-links ul li {
         list-style: none;
         margin-top: 10px;
         font-size: 16px;
+    }
+
+    footer .footer-form input {
+        font-size: 14px;
     }
 
     footer .lower-footer .social-icon {
