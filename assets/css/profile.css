@@ -180,11 +180,20 @@ body {
 }
 
 
-.profile-form form input,
+/* .profile-form form input,
 .profile-form form textarea {
 
     border: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 7px;
     width: 100%;
     background-color: transparent;
+} */
+
+.profile-form form input,
+.profile-form form textarea {
+    border: 1px solid rgb(0 0 0 / 30%);
+    border-radius: 7px;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 10px;
 }
