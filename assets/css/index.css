@@ -213,7 +213,7 @@ body {
     margin-bottom: 80px;
 }
 
-.faq-section .statistics-container .statistics-number {
+.faq-section .statistics-container span.statistics-number {
     color: var(--secondary-color);
     font-weight: 800;
     font-size: 42px;
